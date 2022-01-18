@@ -2,12 +2,14 @@ import React from "react";
 import "../Top/Top.css";
 
 /* img */
+import wallpaper from '../../public/site/wallpaper/top.png';
 import thanos from "../../public/site/thanos.gif";
 import avatar from "../../public/avatar.png";
 
 
 class Top extends React.Component {
   render() {
+    document.body.style.backgroundImage = "url(" + wallpaper + ")";
     return <Body />;
   }
 }
@@ -15,15 +17,15 @@ class Top extends React.Component {
 function Body() {
   return (
     <>
-      <nav class="container mt-4">
-        <div class="post">
-          <div class="thanos">
+      <nav className="container mt-4">
+        <div className="post">
+          <div className="thanos">
             <img src={thanos} />
           </div>
 
           <hr />
 
-          <div class="top-users">
+          <div className="top-users">
             <table>
               <tr>
                 <th>#</th>

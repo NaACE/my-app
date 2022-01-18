@@ -3,10 +3,12 @@ import '../Games/Games.css';
 
 /* icons */
 import game_icons from '../../public/site/game icons/virus v2.png';
-
+import wallpaper from '../../public/site/wallpaper/games.png';
 
 class Games extends React.Component {
   render() {
+    document.body.style.backgroundImage = "url(" + wallpaper + ")";
+
     return (
       <Body />
     )
@@ -16,18 +18,18 @@ class Games extends React.Component {
 function Body() {
   return (
     <>
-      <div class="container mt-4">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="product">
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="product">
               <a href="/virus">
-                <div class="image">
+                <div className="image">
                   <img src={game_icons} />
                 </div>
 
                 <div>
                   <hr />
-                  <div class="center">
+                  <div className="center">
                     <h3>Virus v3</h3>
                   </div>
                   <hr />

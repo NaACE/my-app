@@ -4,11 +4,11 @@ const Script = () => {
   setTimeout(function () {
     register_f.checked = true;
     console.log('Привет от JavaScript!');
-  }, 1000);
+  }, 200);
   setTimeout(function () {
     signin.checked = true;
     console.log('Привет от JavaScript!');
-  }, 1000);
+  }, 200);
 
   const sign_in = document.getElementById("sign_in");
   const user_name = document.getElementById("user_name");

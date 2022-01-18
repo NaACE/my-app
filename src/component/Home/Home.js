@@ -1,15 +1,15 @@
 import React from "react";
-//import "../Home/Home.css";
+import "../Home/Home.css";
 
 /* img */
-import avatar from "../../public/avatar.png";
+import wallpaper from '../../public/site/wallpaper/main.png';
 import fire from "../../public/site/fire.gif";
-
-import main from '../../public/site/wallpaper/main.png';
+import avatar from "../../public/avatar.png";
 
 class Home extends React.Component {
   render() {
-    document.body.style.backgroundColor = "green";
+    document.body.style.backgroundImage = "url(" + wallpaper + ")";
+
     return (
       <div>
         <Body />
@@ -22,16 +22,16 @@ class Home extends React.Component {
 
 function Body() {
   return (
-    <nav class="container mt-4">
-      <div class="post">
-        <div class="info">
+    <nav className="container mt-4">
+      <div className="post">
+        <div className="info">
           <div>
             <img src={avatar} />
             <span>Na_ACE</span>
           </div>
         </div>
         <hr />
-        <div class="message">
+        <div className="message">
           <span>
             Changes in the site:
             <li>
@@ -44,54 +44,54 @@ function Body() {
         </div>
       </div>
 
-      <div class="post">
-        <div class="info">
+      <div className="post">
+        <div className="info">
           <div>
             <img src={avatar} />
             <span>Na_ACE</span>
           </div>
         </div>
         <hr />
-        <div class="message">
+        <div className="message">
           <span>Welcome! Our site is at the beta testing stage</span>
         </div>
       </div>
 
-      <div class="post">
-        <div class="info">
+      <div className="post">
+        <div className="info">
           <div>
             <img src={avatar} />
             <span>Na_ACE</span>
           </div>
         </div>
         <hr />
-        <div class="message">
+        <div className="message">
           <span>Welcome! Our site is at the beta testing stage</span>
         </div>
       </div>
 
-      <div class="post">
-        <div class="info">
+      <div className="post">
+        <div className="info">
           <div>
             <img src={avatar} />
             <span>Na_ACE</span>
           </div>
         </div>
         <hr />
-        <div class="message">
+        <div className="message">
           <span>Welcome! Our site is at the beta testing stage</span>
         </div>
       </div>
 
-      <div class="post">
-        <div class="info">
+      <div className="post">
+        <div className="info">
           <div>
             <img src={avatar} />
             <span>Na_ACE</span>
           </div>
         </div>
         <hr />
-        <div class="message">
+        <div className="message">
           <span>We have this wonderful site</span>
         </div>
       </div>
@@ -101,7 +101,7 @@ function Body() {
 
 function Fire() {
   return (
-    <div class="style_ignore">
+    <div className="style_ignore">
       <img src={fire} />
       <img src={fire} />
       <img src={fire} />

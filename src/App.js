@@ -26,10 +26,10 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/games" component={Games} />
-          <Route path="/top" component={Top} />          
-          <Route path="/virus" component={Virus} /> 
-          <Route path="/identification" component={Identification} />
+          <Route exact path="/games" component={Games} />
+          <Route exact path="/top" component={Top} />          
+          <Route exact path="/virus" component={Virus} /> 
+          <Route exact path="/identification" component={Identification} />
         </Switch>
       </Router>
     </>
