@@ -3,12 +3,12 @@ import React from "react";
 class Header extends React.Component {
   render() {
     return (
-      <nav class="navbar">
-        <div class="container">
+      <nav className="navbar">
+        <div className="container">
           <Left_components />
 
-          <div class="navbar-wrap">
-            <ul class="navbar-menu">
+          <div className="navbar-wrap">
+            <ul className="navbar-menu">
               <li>
                 <a href="/identification">Sign In</a>
               </li>
@@ -32,8 +32,8 @@ class Header extends React.Component {
 
 function Left_components() {
   return (
-    <div class="left_menu">
-      <ul class="navbar-menu">
+    <div className="left_menu">
+      <ul className="navbar-menu">
         <li>
           <a href="/">Home</a>
         </li>

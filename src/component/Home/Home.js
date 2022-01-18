@@ -1,12 +1,15 @@
 import React from "react";
-import "../Home/Home.css";
+//import "../Home/Home.css";
 
 /* img */
 import avatar from "../../public/avatar.png";
 import fire from "../../public/site/fire.gif";
 
+import main from '../../public/site/wallpaper/main.png';
+
 class Home extends React.Component {
   render() {
+    document.body.style.backgroundColor = "green";
     return (
       <div>
         <Body />
