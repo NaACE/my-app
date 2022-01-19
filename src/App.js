@@ -9,8 +9,8 @@ import Virus from "./component/Virus/Virus";
 import Identification from "./component/Identification/Identification";
 
 /* <!-- Bootstrap --> */
-import "./public/bootstrap-reboot.min.css";
-import "./public/bootstrap-grid.min.css";
+import './public/bootstrap-reboot.min.css';
+import './public/bootstrap-grid.min.css';
 
 /* <!-- Шрифты --> */
 import "./public/fonts/fonts.css";

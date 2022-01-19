@@ -1,5 +1,5 @@
 import React from "react";
-import Phaser from "phaser";
+import "phaser";
 
 //import Phaser from 'phaser3-react';
 //import "../Virus/Virus.css";
@@ -22,7 +22,6 @@ class Virus extends React.Component {
     <>
     <Body/>
 
-    {Phaser}
     {Index}
     </>
     )}
