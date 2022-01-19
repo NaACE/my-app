@@ -5,6 +5,7 @@ import "phaser";
 //import "../Virus/Virus.css";
 
 //import Phaser from '../../public/games/phaser.min.js';
+import Index from '../../public/games/index';
 //import Index from ' ../../public/games/index.js';
 //import '../../public/'
 
@@ -36,7 +37,7 @@ function Body() {
           <div className="col">
             <div id="game"></div>
 
-            
+            {Index}
           </div>
         </div>
       </div>
