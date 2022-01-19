@@ -5,7 +5,8 @@ import "phaser";
 //import "../Virus/Virus.css";
 
 //import Phaser from '../../public/games/phaser.min.js';
-import Index from '../../public/games/index.js';
+//import Index from ' ../../public/games/index.js';
+//import '../../public/'
 
 //import Index from '../../public/games/index.js';
 
@@ -17,15 +18,15 @@ import dog_r from "../../public/site/dog r.gif";
 class Virus extends React.Component {
   render() {
     document.body.style.backgroundImage = "url(" + wallpaper + ")";
-
-    return(
-    <>
-    <Body/>
-
-    {Index}
-    </>
-    )}
+    return (
+      <>
+        <Body />
+      </>
+    )
+  }
 }
+
+//{Index}
 
 function Body() {
   return (
@@ -34,6 +35,8 @@ function Body() {
         <div className="row rowBg align-items-center">
           <div className="col">
             <div id="game"></div>
+
+            
           </div>
         </div>
       </div>
