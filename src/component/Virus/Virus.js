@@ -5,11 +5,13 @@ import "phaser";
 //import "../Virus/Virus.css";
 
 //import Phaser from '../../public/games/phaser.min.js';
-import Index from '../../public/games/index';
-//import Index from ' ../../public/games/index.js';
+//import Index from '../../public/games/index';
+//import Game from '../../public/games/index.js';
 //import '../../public/'
 
 //import Index from '../../public/games/index.js';
+import Game from "../../public/games/Game.js";
+//import Index from "../../public/games/index.js";
 
 /* img */
 import wallpaper from '../../public/site/wallpaper/virus.png';
@@ -21,24 +23,24 @@ class Virus extends React.Component {
     document.body.style.backgroundImage = "url(" + wallpaper + ")";
     return (
       <>
+        {/* {Phaser} */}
         <Body />
+        <Game />
       </>
     )
   }
 }
-
-//{Index}
 
 function Body() {
   return (
     <>
       <div className="container mt-5">
         <div className="row rowBg align-items-center">
+          <img src={dog_l}/>
           <div className="col">
             <div id="game"></div>
-
-            {Index}
           </div>
+          <img src={dog_r}/>
         </div>
       </div>
     </>

@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 
+
 class Level01 extends Phaser.Scene {
     player;
     cursor;
@@ -10,7 +11,6 @@ class Level01 extends Phaser.Scene {
         super({
             key: "Level01"
         });
-        console.log("constructor");
     }
 
     // Размер тайла
@@ -19,17 +19,16 @@ class Level01 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image("tiles", "/games/tilesets/tilesetll.png");
-        this.load.image('player', '/games/images/player.png');
-        this.load.image('cobblestone', '/games/images/cobblestone.png');
-        this.load.image('eat', '/games/images/eat.png');
-        this.load.image('floor', '/games/images/edible block.jpg')
-        this.load.image('block', '/games/images/block.png')
-        this.load.tilemapTiledJSON('map', '/games/tilemaps/level01.json');
+        this.load.image("tiles", "./tilesets/tilesetll.png");
+        this.load.image('player', './images/player.png');
+        this.load.image('cobblestone', './images/cobblestone.png');
+        this.load.image('eat', './images/eat.png');
+        this.load.image('floor', './images/edible block.jpg')
+        this.load.image('block', './images/block.png')
+        this.load.tilemapTiledJSON('map', './tilemaps/level01.json');
     }
 
     create() {
-
         const map = this.make.tilemap({
             key: 'map',
             tileWidth: this.tileSize,
@@ -129,10 +128,10 @@ class Level01 extends Phaser.Scene {
     getKeysDownState() {
         // Получаем текущее состояние кнопок с клавиатуры
         return {
-            left: this.cursors.left.isDown == true,
-            right: this.cursors.right.isDown == true,
-            up: this.cursors.up.isDown == true,
-            down: this.cursors.down.isDown == true
+            left: this.cursors.left.isDown === true,
+            right: this.cursors.right.isDown === true,
+            up: this.cursors.up.isDown === true,
+            down: this.cursors.down.isDown === true
         }
     }
 
