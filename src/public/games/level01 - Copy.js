@@ -1,7 +1,7 @@
 import Phaser from "phaser";
 
 import tiles from "./tilesets/tilesetll.png";
-import player from "./images/playerAlive.png";
+import player from "./images/player.png";
 import cobblestone from "./images/cobblestone.png";
 import eat from "./images/eat.png";
 import floor from "./images/edible block.jpg";
@@ -9,6 +9,11 @@ import block from "./images/block.png";
 import map from "./tilemaps/level01.json";
 
 class Level01 extends Phaser.Scene {
+  player;
+  cursor;
+  movementHistory = []; // история перемещения
+  score = 0;
+
   constructor() {
     super({
       key: "Level01",
@@ -21,16 +26,15 @@ class Level01 extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("tiles", tiles);
-    this.load.image("player", player);
-    this.load.image("cobblestone", cobblestone);
-    this.load.image("eat", eat);
-    this.load.image("floor", floor);
-    this.load.image("block", block);
-    this.load.tilemapTiledJSON("map", map);
+    this.load.image("tiles", { tiles });
+    this.load.image("player", { player });
+    this.load.image("cobblestone", { cobblestone });
+    this.load.image("eat", { eat });
+    this.load.image("floor", { floor });
+    this.load.image("block", { block });
+    this.load.tilemapTiledJSON("map", { map });
   }
 
-  
   create() {
     const map = this.make.tilemap({
       key: 'map',
@@ -39,7 +43,6 @@ class Level01 extends Phaser.Scene {
     });
 
     const tiles = map.addTilesetImage("tilesetll", {tiles});
-    
 
     // Загружаем слой wall
     const walls = map.createDynamicLayer("wall", tiles, 0, 0);

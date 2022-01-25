@@ -22,7 +22,6 @@ function App() {
   return (
     <>
       <Header username="Name" />
-
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />

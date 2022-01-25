@@ -10,12 +10,12 @@ class Header extends React.Component {
           <div className="navbar-wrap">
             <ul className="navbar-menu">
               <li>
-                <a href="/identification">Sign In</a>
+                <a href="/identification">Sign in</a>
               </li>
               <li>
                 <a href="/identification">Register</a>
               </li>
-
+              <li>||||||||||||||</li>
               <li>
                 <a>{this.props.username}</a>
               </li>
