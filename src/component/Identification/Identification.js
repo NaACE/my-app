@@ -4,7 +4,7 @@ import "../Identification/Identification.css";
 import "../Identification/Script";
 
 /* img */
-import wallpaper from "../../public/site/wallpaper/identification.png";
+import wallpaper from '../Identification/wallpaper.png';
 
 class Identification extends React.Component {
   constructor(props) {

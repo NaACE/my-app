@@ -1,10 +1,9 @@
 import React from "react";
-import "../Home/Home.css";
 
 /* img */
-import wallpaper from '../../public/site/wallpaper/main.png';
-import fire from "../../public/site/fire.gif";
-import avatar from "../../public/avatar.png";
+import wallpaper from '../Home/wallpaper.png'
+import fire from "../Home/fire.gif";
+import avatar from "../Home/avatar.png";
 
 class Home extends React.Component {
   render() {

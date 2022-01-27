@@ -2,9 +2,9 @@ import React from "react";
 import "../Top/Top.css";
 
 /* img */
-import wallpaper from '../../public/site/wallpaper/top.png';
-import thanos from "../../public/site/thanos.gif";
-import avatar from "../../public/avatar.png";
+import wallpaper from '../Top/wallpaper.png';
+import thanos from "../Top/thanos.gif";
+import avatar from "../Top/avatar.png";
 
 
 class Top extends React.Component {

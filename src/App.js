@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./header/Header";
+import Header from "./Header";
 
 /* Страницы */
 import Home from "./component/Home/Home";
-import Games from "./component/Games/Games";
+import Library from "./component/Library/Library";
 import Top from "./component/Top/Top";
 import Virus from "./component/Virus/Virus";
 import Identification from "./component/Identification/Identification";
 
 /* <!-- Bootstrap --> */
-import './public/bootstrap-reboot.min.css';
-import './public/bootstrap-grid.min.css';
+import './main/bootstrap-reboot.min.css';
+import './main/bootstrap-grid.min.css';
 
 /* <!-- Шрифты --> */
-import "./public/fonts/fonts.css";
+import "./main/fonts.css";
 
 // <-- Стили сайта -->
 import "./Main.css";
@@ -25,7 +25,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/games" component={Games} />
+          <Route exact path="/library" component={Library} />
           <Route exact path="/top" component={Top} />          
           <Route exact path="/virus" component={Virus} /> 
           <Route exact path="/identification" component={Identification} />

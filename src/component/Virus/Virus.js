@@ -1,12 +1,12 @@
 import React from "react";
 import "phaser";
 
-import Game from "../../public/games/Game.js";
+import Game from '../Virus/Game.js';
 
 /* img */
-import wallpaper from '../../public/site/wallpaper/virus.png';
-import dog_l from "../../public/site/dog l.gif";
-import dog_r from "../../public/site/dog r.gif";
+import wallpaper from '../Virus/wallpaper.png';
+import dog_l from "../Virus/dog l.gif";
+import dog_r from "../Virus/dog r.gif";
 
 class Virus extends React.Component {
   render() {
