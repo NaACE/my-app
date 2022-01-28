@@ -7,6 +7,8 @@ class Level01 extends Phaser.Scene {
     });
   }
 
+  // Waaaaaaaaaaaazaaaaaaaaaaaaaaaaaaaaaaaa!
+
   get tileSize() {
     return 64;
   }
