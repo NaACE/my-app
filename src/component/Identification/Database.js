@@ -1,5 +1,5 @@
-//const mysql = require('mysql');
-const mysql = null;
+const mysql = require('mysql');
+//const mysql = null;
 
 const Database = {
     signin: function (email, pass) {
