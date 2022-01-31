@@ -49,9 +49,9 @@ class Identification extends React.Component {
     if(this.state.radio == 'signin') {
       Database.signin(this.state.gmail, this.state.pass);
     } else if(this.state.radio == 'signup') {
-      Database.signin(this.state.gmail, this.state.pass, this.state.repass);
+      Database.signup(this.state.gmail, this.state.pass, this.state.repass);
     } else if(this.state.radio == 'reset') {
-      Database.signin(this.state.gmail);
+      Database.reset(this.state.gmail);
     }
 
     event.preventDefault();

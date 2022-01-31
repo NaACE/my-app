@@ -1,27 +1,30 @@
-const mysql = require('mysql');
+//const mysql = require('mysql');
+const mysql = null;
 
 const Database = {
     signin: function(email, pass) {
-        var db = new DB('select *  from `users` where `username` = "' + email + '" and `password` = "' + pass + '"');
+        console.log(email + ' == ' + pass);
+        //var db = new DB('select *  from `users` where `username` = "' + email + '" and `password` = "' + pass + '"');
         //db.run();
     },
     signup: function(email, pass, repass) {
+        console.log(email + ' == ' + pass + ' == ' + repass);
         //var db = new DB("INSERT INTO users(id, username, password) VALUES( 2, '" + email + "', '" + user.password + "' )");
         //console.log(db.run());
         //callback(db.run()); // db.run()
     },
-    reset: function() {
-
+    reset: function(email) {
+        console.log(email);
     }
 }
-
+/*
 class DB { 
     constructor(select) {
         this.select = select;
         this.test();
     }
 
-    /*test() {
+    test() {
         var connection = mysql.createConnection({
             host: 'localhost',
             user: 'root',
@@ -40,7 +43,7 @@ class DB {
             if (err) console.log(err);
             connection.end;
         });
-    } */
+    }
 
     run() {
         console.log('run');
@@ -67,6 +70,6 @@ class DB {
             connection.end();
         });
     }
-}
+}*/
 
 export default Database;
