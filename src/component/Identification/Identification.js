@@ -1,7 +1,8 @@
 import React from "react";
+import Database from './Database.js';
 
+/* css */
 import "../Identification/Identification.css";
-import "../Identification/Script";
 
 /* img */
 import wallpaper from '../Identification/wallpaper.png';
@@ -30,7 +31,6 @@ class Identification extends React.Component {
     this.setState({radio: event.target.value});
   }
 
-
   handleEmail(event) {
     this.setState({gmail: event.target.value});
   }
@@ -44,11 +44,15 @@ class Identification extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('radio: ' + this.state.radio + ', gmail: ' + this.state.gmail + ", pass: " + this.state.pass + ", repass: " + this.state.repass);
-    // По идее сдесь должено быть обращение к bd
+    //alert('radio: ' + this.state.radio + ', gmail: ' + this.state.gmail + ", pass: " + this.state.pass + ", repass: " + this.state.repass);
 
-    
-
+    if(this.state.radio == 'signin') {
+      Database.signin(this.state.gmail, this.state.pass);
+    } else if(this.state.radio == 'signup') {
+      Database.signin(this.state.gmail, this.state.pass, this.state.repass);
+    } else if(this.state.radio == 'reset') {
+      Database.signin(this.state.gmail);
+    }
 
     event.preventDefault();
   }
