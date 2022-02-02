@@ -7,20 +7,24 @@ class Level01 extends Phaser.Scene {
     });
   }
 
-  // Waaaaaaaaaaaazaaaaaaaaaaaaaaaaaaaaaaaa!
+  // Waaaaaaaaaaaazaaaaaaaaaaaaaaaaaaaaaaaa
 
   get tileSize() {
     return 64;
   }
 
   preload() {
-    this.load.image("tiles", './tilesets/tilesetll.png');
-    this.load.image("player", './Images/playerAlive.png');
-    this.load.image("cobblestone", './Images/cobblestone.png');
-    this.load.image("eat", './Images/eat.png');
-    this.load.image("floor", './Images/edible block.jpg');
-    this.load.image("block", './Images/block.png');
-    this.load.tilemapTiledJSON("map", './tilemaps/level01.json');
+    const tiles = require('./tilesets/tilesetll.png');
+    const player = require('./Images/playerAlive.png');
+    
+    console.log(player);
+    this.load.image('tiles', tiles);
+    this.load.image('player', player);
+    this.load.image('cobblestone', require('./Images/cobblestone.png'));
+    this.load.image('eat', require('./Images/eat.png'));
+    this.load.image('floor', require('./Images/edible block.jpg'));
+    this.load.image('block', require('./Images/block.png'));
+    this.load.tilemapTiledJSON('map', require('./tilemaps/level01.json'));
   }
   
   create() {

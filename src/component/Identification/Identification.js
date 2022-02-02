@@ -44,13 +44,11 @@ class Identification extends React.Component {
   }
 
   handleSubmit(event) {
-    //alert('radio: ' + this.state.radio + ', gmail: ' + this.state.gmail + ", pass: " + this.state.pass + ", repass: " + this.state.repass);
-
-    if(this.state.radio == 'signin') {
+    if(this.state.radio === 'signin') {
       Database.signin(this.state.gmail, this.state.pass);
-    } else if(this.state.radio == 'signup') {
+    } else if(this.state.radio === 'signup') {
       Database.signup(this.state.gmail, this.state.pass, this.state.repass);
-    } else if(this.state.radio == 'reset') {
+    } else if(this.state.radio === 'reset') {
       Database.reset(this.state.gmail);
     }
 

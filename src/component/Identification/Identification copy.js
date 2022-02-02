@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import "../Identification/Identification.css";
 import "../Identification/Script";
 
@@ -25,11 +24,7 @@ function Body() {
           <div className="container">
             <input id="signin" type="radio" name="tab" checked="checked" />
             <input id="register" type="radio" name="tab" />
-
             <div className="pages">
-              
-
-
               <div className="page">
                 <div className="input">
                   <div className="title">USERNAME</div>
