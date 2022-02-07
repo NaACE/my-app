@@ -204,15 +204,17 @@ body {
 
 .style_ignore {
   position: absolute;
-  bottom: -340px;
+  bottom: -64px;
   width: 100%;
 }
 
 .style_ignore img {
-  width: 19.5%;
+  width: 5%;
 }
 
-
+hr {
+  margin: 6px 0;
+}
 
 
 
@@ -220,7 +222,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
   border: 0.1pc solid gray;
   background-color: snow;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-radius: 5px;
   padding: 16px;
   width: 100%;
@@ -233,7 +235,6 @@ body {
   align-items: center;
   height: inherit;
   display: flex;
-  padding: 8px;
 }
 .info img {
   border-radius: 100px;
@@ -241,12 +242,12 @@ body {
 }
 .info span {
   padding-left: 14px;
-  font-size: 21px;
+  font-size: 100%;
 }
 
 
 .message {
-  font-size: 18px;
+  font-size: 100%;
   padding: 8px;
 }
 .message li {

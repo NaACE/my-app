@@ -1,17 +1,15 @@
-import React from 'react';
-import '../Library/Library.css';
+import React from "react";
+import "../Library/Library.css";
 
 /* icons */
-import icon from './Icons/virus v2.png'
-import wallpaper from '../Library/wallpaper.png';
+import icon from "./Icons/virus v2.png";
+import wallpaper from "../Library/wallpaper.png";
 
 class Games extends React.Component {
   render() {
     document.body.style.backgroundImage = "url(" + wallpaper + ")";
 
-    return (
-      <Body />
-    )
+    return <Body />;
   }
 }
 
@@ -20,21 +18,11 @@ function Body() {
     <>
       <div className="container mt-4">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="product">
               <a href="/virus">
-                <div className="image">
-                  <img src={icon} />
-                </div>
-
-                <div>
-                  <hr />
-                  <div className="center">
-                    <h3>Virus v3</h3>
-                  </div>
-                  <hr />
-                  <small>"Addictive gameplay realistic graphics and all this is not in this game"</small>
-                </div>
+                <img src={icon} />
+                <p className="name">Virus v3</p>
               </a>
             </div>
           </div>

@@ -15,7 +15,6 @@ class Header extends React.Component {
               <li>
                 <a href="/identification">Register</a>
               </li>
-              <li>||||||||||||||</li>
               <li>
                 <a>{this.props.username}</a>
               </li>

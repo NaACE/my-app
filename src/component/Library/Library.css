@@ -2,40 +2,22 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: 0.1pc solid gray;
   border-radius: 5px;
-  background-color: snow;
-  padding: 16px;
-}
+  background-color:rgb(12, 13, 15);
 
-.product a {
-  text-decoration: none;
-  color: #000;
-}
-
-.product small {
-  font-size: 17px;
-  color: coral;
-}
-
-.center h3 {
   text-align: center;
-  font-size: 32px;
 }
 
 .image img {
-  margin-bottom: 10px;
+  max-width: 100%;
   border: 1px solid black;
-}
 
-.image img {
-  height: 240px;
-  width: 100%;
   object-fit: cover;
   border-radius: 7px;
 }
 
-.info h3 {
-  font-style: 59px;
-  margin-bottom: 0;
+.product .name {    
+  font-size: 16px;
+  color: snow;
 }
 
 .rating {

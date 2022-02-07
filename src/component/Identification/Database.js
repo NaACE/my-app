@@ -12,15 +12,10 @@ const Database = {
       password: pass,
     };
 
-    fetch("http/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(user),
-    })
+    fetch("http://localhost:3030/")
       .then((response) => response.json())
       .then((json) => {
+        console.log(json);
         if (json.error) {
           alert("Error registration");
         } else {
